@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Topic from '../Topic/Topic';
-import Topics from '../Topics/Topics';
+
+
 
 const Home = () => {
     return (
@@ -16,7 +16,7 @@ const Home = () => {
             Appliances at extremely interesting price.
           </p>
           <div className="flex flex-wrap justify-center">
-            <Link to="/shop">
+            <Link to="/topics">
               <button
                 type="button"
                 className="px-8 py-3 m-2 text-lg font-semibold rounded-full  text-gray-900 hover:bg-cyan-400 bg-cyan-200"
@@ -24,20 +24,24 @@ const Home = () => {
                 start quiz
               </button>
             </Link>
-            <Link to="/about">
+            <Link to="/statistics">
               <button
                 type="button"
                 className="px-8 py-3 m-2 text-lg border rounded-full border-cyan-400 text-gray-900"
               >
-                Learn more
+                statistics
               </button>
             </Link>
           </div>
+   
         </div>
       </div>
      <section>
      </section>
+     
     </section>
+
+ 
    
     );
 };

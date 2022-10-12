@@ -2,8 +2,12 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home/Home';
 import Quiz from './components/Quiz/Quiz';
+import Statistics from './components/Statistics/Statistics';
 import Topics from './components/Topics/Topics';
 import Main from './Layout/Main';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
   const router = createBrowserRouter([
@@ -32,12 +36,18 @@ function App() {
         loader:({params})=> fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`),
         element:<Quiz></Quiz>
       },
+      {
+        path:'/statistics',
+       element:<Statistics></Statistics>,
+       loader:()=> fetch('https://openapi.programming-hero.com/api/quiz')
+      }
     ]
     }
   ])
   return (
     <div className="App">
      <RouterProvider router={router}></RouterProvider>
+     <ToastContainer />
     </div>
   );
 }
