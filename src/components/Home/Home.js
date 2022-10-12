@@ -32,6 +32,14 @@ const Home = () => {
                 statistics
               </button>
             </Link>
+            <Link to="/blog">
+              <button
+                type="button"
+                className="px-8 py-3 m-2 text-lg border rounded-full border-cyan-400 text-gray-900"
+              >
+                blog
+              </button>
+            </Link>
           </div>
    
         </div>

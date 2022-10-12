@@ -7,6 +7,7 @@ import Topics from './components/Topics/Topics';
 import Main from './Layout/Main';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Blogs from './components/Blog/Blogs';
 
 
 function App() {
@@ -40,6 +41,10 @@ function App() {
         path:'/statistics',
        element:<Statistics></Statistics>,
        loader:()=> fetch('https://openapi.programming-hero.com/api/quiz')
+      },
+      {
+        path:'/blog',
+        element:<Blogs></Blogs>
       }
     ]
     }
