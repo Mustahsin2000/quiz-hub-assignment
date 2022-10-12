@@ -10,7 +10,7 @@ const Topic = ({tools}) => {
 	<div className="flex flex-col justify-between p-6 space-y-8">
 		<div className="space-y-2">
 			<h2 className="text-3xl text-left font-semibold tracking-wide">{name}</h2>
-			<p className="text-gray-100 text-left">Total:{total}</p>
+			<p className="text-gray-100 text-left">Question: {total}</p>
 		</div>
 		<Link to={`../Topic/${tools.id}`}>
         <button

@@ -5,6 +5,7 @@ import { faEye } from '@fortawesome/free-solid-svg-icons'
 import { toast } from 'react-toastify';
 
 const Quizes = ({toli}) => {
+    console.log(toli);
     const rightAnswer = (shada) =>{
        toast(shada);
     }
@@ -18,6 +19,7 @@ const Quizes = ({toli}) => {
     }
     return (
         <div className='bg-red-300  p-5 rounded w-3/4 m-auto mb-5 mt-3 drop-shadow-xl relative'>
+            <h2>{toli.name}</h2>
             <button onClick={()=>rightAnswer(toli.correctAnswer)}><FontAwesomeIcon className='text-end absolute top-0 left-0 p-3' icon={faEye}></FontAwesomeIcon></button>
               <div className='question'>
                 <h2 className='text-3xl text-white'>Question:{toli.question}</h2>
