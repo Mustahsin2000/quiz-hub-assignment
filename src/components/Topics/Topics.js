@@ -6,7 +6,7 @@ const Topics = () => {
     const elements = useLoaderData();
     // console.log(elements);
     return (
-        <div className='rafi'>
+        <div className='grid gap-9 row-gap-5 mb-8 lg:grid-cols-3 sm:row-gap-1 sm:grid-cols-2 w-3/4 m-auto'>
             {
               elements.data.map(tools=><Topic
                 tools={tools}
