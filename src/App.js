@@ -8,6 +8,7 @@ import Main from './Layout/Main';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Blogs from './components/Blog/Blogs';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     {
       path:'/',
       element:<Main></Main>,
+      errorElement:<ErrorPage></ErrorPage>,
       children:
     [
       {
