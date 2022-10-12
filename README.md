@@ -1,6 +1,6 @@
 #  Smart Quiz Hub
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live site: (https://cheerful-chimera-d8acd1.netlify.app/).
 
 ## Available Scripts
 
