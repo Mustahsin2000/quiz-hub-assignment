@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Topic from '../Topic/Topic';
 import Topics from '../Topics/Topics';
 
 const Home = () => {
@@ -34,7 +35,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+     <section>
+     </section>
     </section>
    
     );

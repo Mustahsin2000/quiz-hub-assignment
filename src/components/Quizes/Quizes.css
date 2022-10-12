@@ -1,0 +1,18 @@
+.question{
+    width: 60%;
+    margin: auto;
+    color: brown;
+}
+.answer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: aquamarine;
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+}
+.answer-element{
+    background-color: lightblue;
+    border-radius: 10px;
+    margin: 10px;
+}
