@@ -144,32 +144,32 @@ const Header = () => {
                     <ul className='space-y-4'>
                       <li>
                         <Link
-                          to='/shop'
+                          to='/topics'
                           aria-label='Shop'
                           title='Shop'
                           className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                         >
-                          Shop
+                          Topics
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to='/cart'
+                          to='/statistics'
                           aria-label='Cart'
                           title='Cart'
                           className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                         >
-                          <p> Cart</p>
+                          <p> statistics</p>
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to='/about'
+                          to='/blog'
                           aria-label='About Us'
                           title='About Us'
                           className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                         >
-                          About Us
+                         blog
                         </Link>
                       </li>
                     </ul>
